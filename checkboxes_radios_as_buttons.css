@@ -1,0 +1,55 @@
+/* 
+style checkboxes and radios as buttons 
+NOTE: line height is set via the text size slider in the unbounce page builder
+you'll need to increase that in order to create more space for the padding on the buttons.
+*/
+  .option input {
+	display:none;
+}
+.option {
+	margin-bottonm: -10px !important;
+}
+
+.option label {
+	position: absolute !important;
+	margin-bottom: -10px !important;
+}
+
+.option span::before,
+.option span::after {
+	content: '' !important;
+	position: absolute !important;
+	top: 5px !important;
+	bottom: 5px !important;
+	margin: auto !important;
+    margin-bottom: 15px !important;
+  	font-size: 15px !important;
+  
+}
+
+.option span.label-style {
+	border: 2px solid #0064a8 !important;
+	background-color: #fff !important;
+	font-family: Roboto !important;
+	color: #0064a8 !important;
+	padding: 3px 5px 3px 5px !important;
+	border-radius: 10px !important;
+  	margin-bottom: 15px !important;
+  font-size: 15px !important;
+}
+
+.option span.label-style:hover {
+	background-color: #0064a8 !important;
+  	cursor: pointer !important;
+  	color: #fff !important;
+}
+
+
+input:checked + label span.label-style {
+	background-color: #0064ae !important;
+	color: #fff !important;
+}
+
+#up-option-start-item-1 {
+	padding-top: 10px !important;
+}
